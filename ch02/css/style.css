@@ -1,0 +1,16 @@
+h1{color: #990101}
+h2{font-family: "궁서";}
+p{
+    font-family: "바탕";
+    line-height: 2;
+}
+span{
+    color: red;
+    font-weight: 800;
+    font-size: 20px;
+}
+a{
+    font-size: 20;
+    text-decoration: none; /* 및줄 없애기 */
+    color: black;
+}
