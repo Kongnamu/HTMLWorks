@@ -1,0 +1,37 @@
+
+*{margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  width: 1000px;
+  margin: 0 auto;
+}
+header{
+  /* width는 컨테이너와 같으면 생략 가능 */
+  /* width: 1000px; */
+  height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+section{
+  width: 664px;
+  height: 600px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  float: left;
+}
+aside{
+  width: 336px;
+  height: 600px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  float: right;
+}
+footer{
+  clear: both;
+  width: 1000px;
+  height: 100px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

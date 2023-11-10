@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지입니다.</title>
+  <style>
+    body{
+    background-color: #02233b;
+    }
+    #container{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto; /* 가운데 정렬 */
+    border: 1px dotted gray;
+    padding: 1px 20px;
+    background: #fff url(../ch04/mic.png) no-repeat bottom right;
+}
+    h1{
+      width: 500px;
+      height: 50px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    
+    h3{
+      text-align: center;
+    }
+  </style>
+  <script>
+    // window.open(공지페이지, 공지제목, 창 크기 및 좌표)
+    window.open('notice.html', '공지', 'width=340, height=360, top=150, left=150');
+  </script>
+</head>
+<body>
+  <div id="container">
+  <h1>메인 페이지입니다.</h1>
+  <h3>페이지가 실행되면 공지창이 뜹니다.</h3>
+  </div>
+</body>
+</html>
