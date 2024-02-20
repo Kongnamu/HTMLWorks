@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SDMiSaeng';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDMiSaeng.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 공통 스타일 */
+*{margin: 0; padding: 0; box-sizing: border-box; background-color: black;}
+
+/* 모바일 기준 */
+#container{width: 100%;}
+
+/* header 영역 */
+header{height: 320px;}
+#logo{float:left; width: 15%; height: 60px; line-height: 60px; 
+    padding-left: 20px; background:black;}
+#logo h2{font-family: SDMiSaeng; color: white; font-size: 2em; margin-bottom: 5px; text-decoration: none;}
+header nav{height: 60px; background-color: black; font-family: SDMiSaeng;}
+nav #main-nav{text-align: center; font-family: SDMiSaeng; font-size:1.8em}
+nav #main-nav li{
+  display: inline-block; 
+  line-height: 60px;
+  margin: 0 20px;}
+#main-nav li a{color: white; text-decoration: none;}
+#main-nav li a:hover{color: blue; text-decoration: none;}
+header #main-pic img{width: 100%; height: 260px;}
+#intro .content .photo{height: 260px; padding-right: 20px;}
+#intro .content .me{border-radius: 10px;}
+#intro{font-family: SDMiSaeng; font-size: 1.3em; 
+      color: white; border-bottom: 2px solid white;}
+#intro .text{padding-top: 30px;}
+#intro p{line-height: 1.5; font-size: 1.2em;}
+#work li{line-height: 1.5; font-size: 1.3em;}
+.content #text{font-size: 1.3em;}
+
+/* section 영역 */
+#choice{color: white; font-family: SDMiSaeng; 
+  font-size: 1.6em; line-height: 2; border-bottom: 2px solid white;
+  }
+section{height: 400px; padding: 10px 5%;}
+section .page-title{margin: 20px 0;}
+section p{line-height: 2.5;}
+section .content .photo{display: none;}
+#choice .content h2{margin-bottom: 20px; font-style: italic; color:blue;}
+#choice .content ol {padding-left: 30px;}
+#choice .content ol li{line-height: 2;}
+#choice .content .photo{height: 260px; padding-right: 100px;}
+#choice .content .me2{border-radius: 10px;
+                      position: relative;
+                      bottom: 40px;}
+#map .content .movie{border-radius: 10px;
+                     position: relative; right: 5px;
+                      }
+#map{height: 500px; color: white; font-family: SDMiSaeng; font-size: 1.3em;}
+#map .text{font-size: 1.3em;}
+#map #link,
+#map #link2,
+#map #link3 {
+  float: left;
+  list-style: none;
+  text-align: center;
+ /* 각 링크가 1/3의 너비를 가지도록 설정 */
+}
+#map #link2 .li1{padding-left: 100px;}
+#map .content .music{border-radius: 10px;
+  position: relative; left: 50px;
+   }
+#map #link3 .li2{padding-left: 180px;}
+#map .content .code{border-radius: 10px;
+     position: relative; left: 85px;
+   }
+
+
+/* footer 영역 */
+footer{height:  80px; border-top: 2px solid white;}
+footer ul p{float: right; margin-top: 10px;}
+#bottom-menu{list-style: none; margin: 10px 40px; font-family: SDMiSaeng;
+              font-size: 1.3em;}
+#bottom-menu li{display: inline-block;
+                margin: 10px 0; 
+                padding: 0 10px;
+                border-right: 1px solid #ccc;}
+#bottom-menu li:last-child{border: none;} /* 사이트맵 옆의 바(|) 숨기기 */
+#bottom-menu li a{text-decoration: none; color:#535151;}
+
+/* 테블릿 기준 : 780px 이상 */
+@media screen and (min-width: 780px) {
+  /* header 영역 */
+  header{height: 350px;}
+  header #main-pic img{height: 300px;}
+  nav #main-nav li{margin: 0 40px;}
+
+  /* section 영역 */
+  section{width: 100%; height: 500px; }
+  #intro {float: left; width: 50%;}
+  #choice{float:right; width: 50%;}
+  #map{clear: both;}
+  #map .photo{margin-right: 40px;}
+
+   /* footer 영역 */
+   #bottom-menu{margin: 10px 40px;}
+   #bottom-menu li{margin: 10px 0; padding: 0 10px;}
+   #bottom-menu li a{font-size: 1em;}
+}
+
+/* pc 기준 : 1200px 이상 */
+@media screen and (min-width: 1200px){
+  #container{width: 1200px; margin: 0 auto;}
+   /* header 영역 */
+   header{height: 380px;}
+   nav #main-nav li{margin: 0 50px;}
+   header #main-pic img{height: 320px;}
+
+   /* section 영역 */
+   section{width: 100%; height: 420px;}
+   #intro, #choice, #map{width: 100%;}
+   section .content .photo {display: block;}
+   #intro .photo, #map .photo{float: left; margin-right: 20px;}
+   #choice .photo{float: right; margin-bottom: 20px;}
+   #choice .content ol li{line-height: 2;}
+
+
+}
